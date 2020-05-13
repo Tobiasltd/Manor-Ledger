@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="This is my website description">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Managing Your Castle Library</title>
+</head>
+<body>
+    <header class="hero blog">
+        <div class="navbar top" id="navbar">
+            <h1 class="logo">
+                <span class="text-primary"><i class="fab fa-fort-awesome"></i> Manor</span> Ledger
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#cases">Cases</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1>Blog</h1>
+        </div>
+    </header>
+    <main>
+      <section class="post">
+        <h2>Managing Your Castle Library</h2>
+        <p class="meta">
+          <i class="fas fa-user"></i> Posted By <strong>Martijn van Rooijen</strong> | May 6 2020
+        </p>
+        <img src="images/blog/blog1.jpg" alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum autem asperiores dignissimos impedit illo molestiae consequatur iusto veritatis quod nobis, earum culpa animi voluptate nisi totam quo alias qui recusandae? Placeat aspernatur facere voluptates, at laudantium libero ratione voluptate ut, quo provident fuga natus nemo possimus explicabo perspiciatis accusamus maiores neque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad est dolor ex nemo, non consequuntur amet suscipit accusantium perferendis, quasi error. Ex, at nisi perferendis repudiandae placeat qui velit accusamus voluptatibus fuga, ipsa non possimus quo odit cumque quam, delectus corporis! Ad distinctio atque tempore adipisci minima tenetur optio qui perspiciatis, odit magnam commodi dolor blanditiis maxime architecto quia dolores ex eos ab ratione obcaecati facilis iusto nemo. At, blanditiis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi cum sapiente dicta laboriosam et soluta natus voluptatem corrupti inventore! Perspiciatis dolorum et fugiat similique ea consequuntur fugit at. Unde illo nam adipisci reiciendis cumque, optio ipsa provident, natus corporis, a magnam non quisquam eos quae soluta. Quis earum expedita atque!</p>
+      </section>
+    
+    </main>
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <p>Copyright &copy; 2020 - Manor Ledger</p>
+    </footer>
+    <script>
+      const navbar = document.getElementById('navbar');
+      let scrolled = false;
+
+      window.onscroll = function() {
+          if(window.pageYOffset > 100) {
+              navbar.classList.remove('top');
+              if(!scrolled) {
+                  navbar.style.transform = 'translateY(-70px)';
+              }
+              setTimeout(function() {
+                  navbar.style.transform = 'translateY(0)'
+                  scrolled = true;
+              }, 200)
+          } else {
+              navbar.classList.add('top');
+              scrolled = false;
+          }
+      }
+      </script>
+</body>
+</html>
